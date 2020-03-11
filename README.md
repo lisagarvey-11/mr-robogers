@@ -9,8 +9,8 @@ Create a website that allows a user to input a number and see a string of numeri
 ### Specifications
 
 All output will be numerical with the following exceptions:
-Numbers that contain a 1: all digits are replaced with "Beep!"
-Numbers that contain a 2: all digits are replaced with "Boop!"
+Numbers that contain a 1: all digits are replaced with "Beep!"; 
+Numbers that contain a 2: all digits are replaced with "Boop!" or 
 Numbers that contain a 3: all digits are replaced with "Won't you be my neighbor?"
 
 Additionally, the highest number should be evaluated for use (ie: if the user enters a 13, the output should be "Won't you be my neighbor?")
