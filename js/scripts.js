@@ -3,8 +3,8 @@ $(document).ready(function() {
   $("form#input_return").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("input#number").val());
-    var result = userInput(number);
-    $("#results").text(result); 
+    var results = userInput(number);
+    $("#results").show(); 
   });
 }); 
 
@@ -15,9 +15,16 @@ var userInput = function(number) {
     newUserInputs.push(i);
   } 
   console.log(newUserInputs);
-  return newUserInputs;
-}
-
-if (userInputs.includes('3')) {
-  return "Won't you be my neighbor?"
-}
+ 
+//reads the piece of the array and converts to a string and locates a certain number within. if no matches, print the number.
+  newUserInputs.forEach(function(newUserInput) {
+    if (newUserInputs[newUserInput].toString().includes('3')) {
+      newUserInputs[newUserInput] = "Won't You Be My Neighbor?";
+    } else if (newUserInputs[newUserInput].toString().includes('2')) {
+        newUserInputs[newUserInput] = "Boop";
+    } else if (newUserInputs[newUserInput].toString().includes('1')) {
+      newUserInputs[newUserInput] = "Beep!";
+    }
+  })
+  return (newUserInputs);
+};
