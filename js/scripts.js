@@ -1,14 +1,17 @@
-//user interface
+//user logic
 $(document).ready(function() {
   $("form#input_return").submit(function(event) {
     event.preventDefault();
-    
-    var userInput = parseInt($("input#number").val());
-    var text = "";
-    for (var index = 0; index = userInput.length; index +=1); {
-      text += userInput[index] + ", ";
-    }
-    $("#results").text(results); 
-
+    var number = parseInt($("input#number").val());
+    var result = userInput(number);
+    $("#results").text(result); 
   });
 }); 
+
+//business logic
+var userInput = function(number) {
+  var newUserInput = [];
+  for (let i = 0; i <= number; i++) {
+    newUserInput.push(' ' + i)
+  } 
+}
