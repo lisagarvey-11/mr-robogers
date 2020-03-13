@@ -15,6 +15,8 @@ Numbers that contain a 3: all digits are replaced with "Won't you be my neighbor
 
 Additionally, the highest number should be evaluated for use (ie: if the user enters a 13, the output should be "Won't you be my neighbor?")
 
+Result when a number is entered like 3: 0, 1, 2, 3
+
 ### SetUp
 
 Clone the github repository listed below to view and update content.
