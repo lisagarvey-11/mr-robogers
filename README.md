@@ -15,7 +15,7 @@ Numbers that contain a 3: all digits are replaced with "Won't you be my neighbor
 
 Additionally, the highest number should be evaluated for use (ie: if the user enters a 13, the output should be "Won't you be my neighbor?")
 
-Result when a number is entered like 23: 0, 1, Boop, Won't You Be My Neighbor
+Result when a number is entered like 3: 0, 1, 2, Won't You Be My Neighbor
 
 ### SetUp
 
