@@ -4,14 +4,15 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = userInput(number);
-    $("#results").text(result); 
+    $("#results").text(results); 
   });
 }); 
 
 //business logic
 var userInput = function(number) {
-  var newUserInput = [];
+  var newUserInputs = [];
   for (let i = 0; i <= number; i++) {
-    newUserInput.push(' ' + i)
+    newUserInputs.push(' ' + i);
   } 
 }
+console.log(newUserInputs)
